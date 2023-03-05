@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+html{
+	font-family: 'VT323', monospace;
+
+}
+body{
+	margin: 0;
+	height: 100vh;
+}
+
+.back{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+	font-weight: 900;
+	font-size: 2rem;
+	color: black;
+  background-color: rgba(255,255,255,0.8);
+  border: 5px solid black;
+  padding: 1rem;
+  width: 100px;
+  border-radius: 20px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.container{
+	text-align: center;
+	background-color: transparent ;
+	width: 600px;
+	color: white;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-70%, -70%);
+	position: relative;
+
+}
+.grid {
+	width: 600px;
+	height: 600px;
+	border: solid black 1p aax;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.grid div {
+	width: 40px;
+	height: 40px;
+	background-color: #1a1a1a ;
+}
+
+.invader {
+	background-image: url(monster.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.shooter {
+	background-image: url(spaceship.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+
+.laser {
+	background-image: url(shoot.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+
+.boom {
+	background-image: url(kaboom.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+
+.buttons{
+	display: flex;
+	margin-bottom: 20px;
+	gap: 15px;
+}
+.buttons>button{
+	padding: 20px;
+	font-size: 2rem;
+	letter-spacing: 5px;
+	font-weight: 900;
+	flex:1;
+	color: white;
+	border-radius: 30px;
+	background-color: transparent;
+	font-family: 'VT323', monospace;
+	border: 5px solid rgb(255,255,255);
+}
+.wrapper{
+	position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-image: url(Space.gif);
+  -webkit-background-size:cover;
+  background-position: center center;
+  overflow: hidden;
+  filter: blur(5px);
+  z-index: -2
+}
+
+.title{
+	position: absolute;
+	top: 100px;
+	right:100px;
+	background-color: transparent;
+	color: rgba(255,255,255,0.7);
+	border-radius: 40px;
+	padding: 10px;
+	width: 500px;
+	text-align: center;
+	border: 5px solid rgba(255,255,255,0.7);
+}
+
+.title h1{
+	font-size: 3rem;
+}
+.title p{
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+	line-height:25px;
+}
+
+.fire{
+	position: absolute;
+	top: 70%;
+	width: 100%;
+	color: rgba(255,255,255,0.7);
+	height: 50px;
+	font-size: 2rem;
+	letter-spacing: 3px;
+}
+.active{
+	background-color: rgba(255,255,255,0.7) !important;
+	color: black !important;
+}
+.how{
+  text-align: center;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+	color: rgba(255,255,255,0.7);
+	border: 5px solid rgba(255,255,255,0.7) ;
+  padding: 1rem;
+  width: 120px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  text-align: left;
+}
+.info{
+  display: none;
+  position: absolute;
+  top: 280px;
+  left: 30px;
+  border: 5px solid black;
+  border-radius: 20px;
+	color: rgba(255,255,255,0.7);
+	border: 5px solid rgba(255,255,255,0.7) ;
+  padding: 1rem;
+  width: 400px;
+  height: 400px;
+  font-size: 1.5rem;
+	letter-spacing: 2px;
+	line-height: 20px;
+  text-align: left;
+}
+.info button{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
